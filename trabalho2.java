@@ -4,14 +4,14 @@ public class trabalho2 {
     public static void main(String[] args) {
         Scanner entrada =  new Scanner(System.in);
         System.out.println("   -Inicio do Programa-   ");
-        String operação;
+        String operacao;
         int valor1;
         int valor2;
         do{
             System.out.println("        -MENU-        ");
             System.out.println("Digite a Operação ou sair: ");
-            operação = entrada.nextLine().trim();
-            switch ( operação) {
+            operacao = entrada.nextLine().trim();
+            switch (operacao) {
                 case "+":
                     try{
                         System.out.println("Primeiro valor: ");
@@ -98,7 +98,7 @@ public class trabalho2 {
                 default:
                     System.out.println("Operação Invalida! ");
                     System.out.println("----------------------\n");}
-        }while(!operação.equalsIgnoreCase("sair"));
+        }while(!operacao.equalsIgnoreCase("sair"));
         System.out.println("   -FIM DO PROGRAMA!-   ");
         entrada.close();
     }
